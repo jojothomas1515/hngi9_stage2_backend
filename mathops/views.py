@@ -4,6 +4,8 @@ from rest_framework.response import Response
 from rest_framework.decorators import api_view
 
 from .operation import operate
+
+
 # functions for api endpoint defination starts hear
 
 @api_view(['POST'])
@@ -18,8 +20,8 @@ def index(request):
             print(e)
 
         json_form = {"slackUsername": "Jojothomas",
-                     "operation_type": int(operator),
                      "result": result,
+                     "operation_type": int(operator),
                      }
 
         return Response(json_form)
