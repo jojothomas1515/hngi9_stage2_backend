@@ -22,7 +22,7 @@ def index(request):
         json_form = {
             "slackUsername": "Jojothomas",
                      "result": result,
-                     "operation_type": int(operator),
+                     "operation_type": operator,
                      }
 
         return Response(json_form)

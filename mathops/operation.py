@@ -25,6 +25,7 @@ def operate(operation, x, y):
     """ look at the operation number and determine which one to use"""
     x = int(x)
     y = int(y)
+    operation = operations[operation].value
     match int(operation):
         case operations.addition.value:
             return add(x, y)
