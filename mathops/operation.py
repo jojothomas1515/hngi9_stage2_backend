@@ -1,4 +1,10 @@
+from enum import Enum
 # basic math operation
+
+class operations(Enum):
+    addition = 1
+    subtraction = 2
+    mulipication = 3
 
 def add(x, y):
     """ add y to x """
@@ -20,11 +26,11 @@ def operate(operation, x, y):
     x = int(x)
     y = int(y)
     match int(operation):
-        case 1:
+        case operations.addition.value:
             return add(x, y)
-        case 2:
+        case operations.subtraction.value:
             return subtract(x, y)
-        case 3:
+        case operations.mulipication.value:
             return multiply(x, y)
         case _:
             return "Invalid operation"
