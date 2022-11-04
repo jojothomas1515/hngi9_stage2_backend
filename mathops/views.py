@@ -19,7 +19,7 @@ def index(request):
         except Exception as e:
             print(e)
 
-        json_form = {"slackUsername": "Jojothomas",
+        json_form = {"slackername": "Jojothomas",
                      "result": result,
                      "operation_type": int(operator),
                      }
