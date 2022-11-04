@@ -20,7 +20,7 @@ def index(request):
             print(e)
 
         json_form = {
-            "slackername": "Jojothomas",
+            "slackUsername": "Jojothomas",
                      "result": result,
                      "operation_type": int(operator),
                      }
