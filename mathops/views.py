@@ -24,4 +24,4 @@ def index(request):
                      "operation_type": int(operator),
                      }
 
-        return Response(json_form)
+        return Response(json.dumps(json_form, indent=4))
