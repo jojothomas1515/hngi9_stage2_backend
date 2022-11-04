@@ -22,4 +22,4 @@ def index(request):
                      "result": result,
                      }
 
-        return Response(json.dumps(json_form, indent=4))
+        return Response(json_form)
